@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Neulis";
+  src: url("./fonts/NeulisAlt-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neulis-Bold";
+  src: url("./fonts/NeulisAlt-Bold.ttf") format("truetype");
+}
+
+body {
+  background-color: #18201d;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Neulis", sans-serif;
+  gap: 1rem;
+}
+
+/* destaque */
+
+.lp-destaque-container {
+  background-image: url("./images/BACKGROUND\ PERSONAGENS.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 45rem;
+}
+
+.lp-destaque-content {
+  background: linear-gradient(0deg, #0c1b18 0%, #0c1b18cb 75%, #0c1b1800 100%);
+  display: flex;
+  padding-top: 5.5rem;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.lp-destaque-content h1 {
+  max-width: 85%;
+  font-size: 2.9rem;
+  line-height: 3rem;
+  font-family: "Neulis-Bold", sans-serif;
+  color: #04f368;
+}
+
+.lp-destaque-content h2 {
+  max-width: 85%;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.lp-destaque-btns {
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.lp-destaque-btns button {
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #04f368;
+  border-radius: 0.6rem;
+  border: none;
+}
+
+.lp-destaque-btns span {
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Neulis", sans-serif;
+  color: #111213;
+}
+
+.lp-destaque-btns img {
+  width: 2.5rem;
+  max-height: 2.5rem;
+  object-fit: contain;
+}
+
+.lp-destaque-btn-ios img {
+  width: 2rem;
+  max-height: 2rem;
+}
+
+/* info card */
+
+.lp-informative-container {
+  background: linear-gradient(90deg, #00e358 0%, #007f3a 50%, #007f3a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  margin-top: -1rem;
+}
+
+.lp-informative-container img {
+  width: 2.5rem;
+  max-height: 2.5rem;
+  object-fit: contain;
+}
+
+.lp-informative-container p {
+  color: #fff;
+  text-align: center;
+}
+
+/* steps android e ios*/
+
+.lp-steps-android-container,
+.lp-steps-ios-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.lp-steps-android-container h4,
+.lp-steps-ios-container h4 {
+  font-size: 1.2rem;
+  font-family: "Neulis", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* slider */
+
+.lp-slider-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  overflow-x: scroll;
+  padding: 0 1rem;
+}
+
+.lp-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.lp-slider-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  max-width: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.lp-slider-info {
+  color: #fff;
+  font-size: 0.7rem;
+  max-width: 100%;
+  padding: 0 0.3rem;
+}
+
+.lp-slider-item img {
+  width: 15.5rem;
+  max-height: 15.5rem;
+  max-width: 9rem;
+  object-fit: contain;
+}
+
+hr {
+  background-color: #008238;
+  border: none;
+  height: 1px;
+  margin: 0 1rem;
+}
