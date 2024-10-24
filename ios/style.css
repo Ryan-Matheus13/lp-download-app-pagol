@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: "Neulis";
-  src: url("./fonts/NeulisAlt-Regular.ttf") format("truetype");
+  src: url("../fonts/NeulisAlt-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Neulis-Bold";
-  src: url("./fonts/NeulisAlt-Bold.ttf") format("truetype");
+  src: url("../fonts/NeulisAlt-Bold.ttf") format("truetype");
 }
 
 body {
@@ -28,7 +28,6 @@ body {
 /* destaque */
 
 .lp-destaque-container {
-  background-image: url("./images/BACKGROUND\ PERSONAGENS.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,48 +35,54 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 100vh;
+  padding-top: 2rem;
 }
 
 .lp-destaque-content {
-  background: linear-gradient(0deg, #0c1b18 0%, #0c1b18cb 75%, #0c1b1800 100%);
-  padding: 0 2rem;
   display: flex;
-  padding-top: 4.5rem;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
-  gap: 0.75rem;
-  padding-bottom: 4rem;
+  padding: 0 2.5rem;
 }
 
-.lp-destaque-content h1 {
-  max-width: 85%;
+.lp-destaque-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -0.65rem;
+}
+
+.lp-destaque-title img {
+  width: 1.8rem;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.lp-destaque-title h1 {
+  display: flex;
+  align-items: center;
+  margin-top: 0.65rem;
   font-size: 2.7rem;
-  padding-right: 1rem;
-  line-height: 2.7rem;
   font-family: "Neulis-Bold", sans-serif;
   color: #04f368;
-  letter-spacing: 2px;
 }
 
-.lp-destaque-content h2 {
-  max-width: 85%;
-  font-size: 2.1rem;
-  letter-spacing: 2px;
+.container h2 {
+  font-size: 2rem;
   color: #fff;
-  margin-top: -0.5rem;
 }
 
 .lp-destaque-btns {
-  max-width: 85%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
 }
 
-.lp-destaque-btns a {
+.lp-destaque-btns a,
+.lp-destaque-footer {
   height: 3.5rem;
   display: flex;
   align-items: center;
@@ -89,18 +94,24 @@ body {
   text-decoration: none;
 }
 
+.lp-destaque-footer {
+  padding: 1rem;
+  max-width: 17rem;
+  margin-bottom: 4rem;
+}
+
+.lp-destaque-footer span {
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
 .lp-destaque-btns span {
-  margin-top: 0.4rem;
-  font-size: 1.3rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Neulis", sans-serif;
   color: #111213;
-}
-
-.lp-destaque-btns img {
-  width: 2rem;
-  max-height: 2rem;
-  object-fit: contain;
 }
 
 .lp-destaque-btn-ios img {
@@ -117,7 +128,6 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 0.5rem;
-  margin-top: -1rem;
 }
 
 .lp-informative-container img {
@@ -139,7 +149,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem 0;
 }
 
 .lp-steps-android-container h4,
@@ -155,10 +164,11 @@ body {
 
 .lp-slider-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
-  gap: 1rem;
-  overflow-x: scroll;
+  gap: 3rem;
   padding: 0 1rem;
+  align-items: center;
 }
 
 .lp-slider-container::-webkit-scrollbar {
@@ -169,22 +179,22 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 9rem;
+  max-width: 15rem;
   justify-content: flex-start;
   align-items: center;
 }
 
 .lp-slider-info {
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 1rem;
   max-width: 100%;
   padding: 0 0.3rem;
+  text-align: center;
 }
 
 .lp-slider-item img {
   width: 15.5rem;
-  max-height: 15.5rem;
-  max-width: 9rem;
+  max-width: 15rem;
   object-fit: contain;
 }
 
@@ -193,4 +203,10 @@ hr {
   border: none;
   height: 1px;
   margin: 0 1rem;
+}
+
+.lp-destaque-btns img {
+  width: 1.5rem;
+  max-height: 1.5rem;
+  object-fit: contain;
 }
